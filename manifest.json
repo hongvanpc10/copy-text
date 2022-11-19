@@ -1,0 +1,15 @@
+{
+	"manifest_version": 3,
+	"name": "Copy Text",
+	"version": "1.0.0",
+	"action": {
+		"default_title": "Copy Text"
+	},
+	"description": "Ctrl + Click to copy text",
+	"content_scripts": [
+		{
+			"matches": ["https://*/*", "http://*/*"],
+			"js": ["content.js"]
+		}
+	]
+}
